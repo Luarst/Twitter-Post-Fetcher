@@ -314,8 +314,8 @@
       if (dataOnly) {
         while (n < x) {
           arrayTweets.push({
-            tweet: tweets[n].innerHTML,
-            author: authors[n] ? authors[n].innerHTML : 'Unknown Author',
+            tweet: tweets[n].textContent,
+            author: authors[n] ? authors[n].textContent : 'Unknown Author',
             author_data: {
               profile_url: authors[n] ? authors[n].querySelector('[data-scribe="element:user_link"]').href : null,
               profile_image: authors[n] ? 
